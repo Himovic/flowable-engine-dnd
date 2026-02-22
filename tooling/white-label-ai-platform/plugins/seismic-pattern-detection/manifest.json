@@ -1,0 +1,17 @@
+{
+  "name": "seismic-pattern-detection",
+  "industry": "oil-gas",
+  "version": "1.0.0",
+  "description": "Detects seismic anomalies for reservoir risk and drilling decisions.",
+  "deployable": true,
+  "endpoints": {
+    "metadata": "/metadata",
+    "train": "/train",
+    "infer": "/infer",
+    "usage": "/events/usage"
+  },
+  "kafka": {
+    "requestTopic": "plugin.seismic-pattern-detection.requests",
+    "resultTopic": "plugin.seismic-pattern-detection.results"
+  }
+}

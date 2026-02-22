@@ -1,0 +1,17 @@
+{
+  "name": "concrete-formula-recommendation",
+  "industry": "construction",
+  "version": "1.0.0",
+  "description": "Recommends concrete mix formulas based on climate, load, and material constraints.",
+  "deployable": true,
+  "endpoints": {
+    "metadata": "/metadata",
+    "train": "/train",
+    "infer": "/infer",
+    "usage": "/events/usage"
+  },
+  "kafka": {
+    "requestTopic": "plugin.concrete-formula-recommendation.requests",
+    "resultTopic": "plugin.concrete-formula-recommendation.results"
+  }
+}

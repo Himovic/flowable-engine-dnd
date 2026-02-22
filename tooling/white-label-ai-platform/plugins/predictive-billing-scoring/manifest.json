@@ -1,0 +1,17 @@
+{
+  "name": "predictive-billing-scoring",
+  "industry": "banking",
+  "version": "1.0.0",
+  "description": "Predicts billing default probability for proactive collection workflows.",
+  "deployable": true,
+  "endpoints": {
+    "metadata": "/metadata",
+    "train": "/train",
+    "infer": "/infer",
+    "usage": "/events/usage"
+  },
+  "kafka": {
+    "requestTopic": "plugin.predictive-billing-scoring.requests",
+    "resultTopic": "plugin.predictive-billing-scoring.results"
+  }
+}
