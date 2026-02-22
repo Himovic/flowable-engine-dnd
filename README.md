@@ -47,3 +47,7 @@ Contributing to Flowable: https://github.com/flowable/flowable-engine/wiki.
 Every self-respecting developer should have read this link on how to ask smart questions: http://www.catb.org/~esr/faqs/smart-questions.html.
 
 After you've done that you can post questions and comments on https://forum.flowable.org and create issues in https://github.com/flowable/flowable-engine/issues.
+
+## White-label AI Workflow Blueprint
+
+A reference blueprint for a white-label workflow automation and AI plugin platform is available at `docs/white-label/workflow-automation-engine-blueprint.md`, with starter plugin scaffolding under `tooling/white-label-ai-platform/`.

@@ -1,0 +1,17 @@
+{
+  "name": "supply-chain-optimization",
+  "industry": "pharma",
+  "version": "1.0.0",
+  "description": "Optimizes inventory and distribution routing for regulated pharma supply chains.",
+  "deployable": true,
+  "endpoints": {
+    "metadata": "/metadata",
+    "train": "/train",
+    "infer": "/infer",
+    "usage": "/events/usage"
+  },
+  "kafka": {
+    "requestTopic": "plugin.supply-chain-optimization.requests",
+    "resultTopic": "plugin.supply-chain-optimization.results"
+  }
+}

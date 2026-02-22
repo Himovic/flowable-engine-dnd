@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/ai-plugin-manifest.schema.json",
+  "title": "AI Plugin Manifest",
+  "type": "object",
+  "required": [
+    "name",
+    "industry",
+    "version",
+    "description",
+    "endpoints"
+  ],
+  "properties": {
+    "name": { "type": "string", "minLength": 3 },
+    "industry": { "type": "string" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "description": { "type": "string", "minLength": 10 },
+    "deployable": { "type": "boolean", "default": true },
+    "endpoints": {
+      "type": "object",
+      "required": ["metadata", "train", "infer"],
+      "properties": {
+        "metadata": { "type": "string" },
+        "train": { "type": "string" },
+        "infer": { "type": "string" },
+        "usage": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "kafka": {
+      "type": "object",
+      "properties": {
+        "requestTopic": { "type": "string" },
+        "resultTopic": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
